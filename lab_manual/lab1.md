@@ -11,11 +11,17 @@
 
 The first lab was a introductory session on how to start the project. It mainly focused on setting up the development environment to run the Django ecommerce project. The lab also focused on creating local and remote repository using Git and performing basic Git commands.
 
-Git
+**Git**
 
-Visual Studio Code
+Git is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development. Its goals include speed, data integrity, and support for distributed, non-linear workflows.
 
-Django
+**Visual Studio Code**
+
+Visual Studio Code, also commonly referred to as VS Code, is a source-code editor made by Microsoft for Windows, Linux and macOS. Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git.
+
+**Django**
+
+Django is a Python-based web framework, free and open-source, that follows the model–template–views architectural pattern.
 
 ***
 
@@ -39,6 +45,7 @@ Django
         python manage.py runserver
 
     a. Verify frontend in browser: Open 'http://127.0.0.1:8000'
+
     b. Verify admin backend in browser: Open 'http://127.0.0.1:8000/admin'
 
 5. Add a module product_module
@@ -93,5 +100,3 @@ We performed basic setup and configured the necessary settings for further progr
 ## Conclusion
 
 In the first lab, we set our development environment and started our django project. After the neccessary database and tables initialized and created, we added a product module and performed CRUD operations in the server. Finally, we pushed our local repository to remote repository in GitHub using Git commands.
-
-***
