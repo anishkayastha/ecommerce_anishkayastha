@@ -35,6 +35,7 @@ Django is a Python-based web framework, free and open-source, that follows the m
 2. Open generated folder in VS code and inspect the created files/folders
 
         code .
+        
 3. Ensure required database and tables are initialized correctly
 
         python manage.py migrate
