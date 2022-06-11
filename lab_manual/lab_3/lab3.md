@@ -62,12 +62,13 @@ below:
 
         ...
         class ProductAdmin(admin.ModelAdmin):
-        list_display = ["image_tag", "name", "price", "brand", "category",]
-        search_fields = ["name", "price", "brand__name", "category__name",]
-        list_filter = ["brand","category","price",]
-        # readonly_fields = ["quantity",]
+            list_display = ["image_tag", "name", "price", "brand", "category",]
+            search_fields = ["name", "price", "brand__name", "category__name",]
+            list_filter = ["brand","category","price",]
+            # readonly_fields = ["quantity",]
         class Meta:
-        model = Product
+            model = Product
+            
         admin.site.register(Product, ProductAdmin)
 
 6. Run the project and navigate to admin to check the result.
