@@ -19,11 +19,14 @@ def search(request):
             products = Product.objects.all()
         categories = Category.objects.all()
         brands = Brand.objects.all()
+        # retrieve the cart items for the user from db
+        cart_items = CartItem.objects.filter(user=request.user)
         context = {
                 'products': products,
                 'categories': categories,
                 'brands': brands,
                 'search_query': '',
+                'cart_items': cart_items,
             }
         return render(request, 'index.html', context)
     elif request.method == "POST":
@@ -36,11 +39,14 @@ def search(request):
         products = Product.objects.filter(filter_query)
         categories = Category.objects.all()
         brands = Brand.objects.all()
+        # retrieve the cart items for the user from db
+        cart_items = CartItem.objects.filter(user=request.user)
         context = {
                 'products': products,
                 'categories': categories,
                 'brands': brands,
                 'search_query': q,
+                'cart_items': cart_items,
             }
         return render(request, 'index.html', context)
 

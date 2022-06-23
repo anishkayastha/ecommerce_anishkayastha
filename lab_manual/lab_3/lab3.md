@@ -68,7 +68,7 @@ below:
             # readonly_fields = ["quantity",]
         class Meta:
             model = Product
-            
+
         admin.site.register(Product, ProductAdmin)
 
 6. Run the project and navigate to admin to check the result.
